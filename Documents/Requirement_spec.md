@@ -15,7 +15,7 @@ __Project name__
 
 The project name is : **Money Detector App**
 
-![app](/images/1000.png)
+![app](/images/1000.jfif)
 
 __Purpose__
 
