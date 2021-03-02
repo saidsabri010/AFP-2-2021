@@ -13,7 +13,7 @@ Requirement specification
 
 __Project name__
 
-The project name is : **Money Detector App**
+The project name is : **Airline Ticket Reservation System**
 
 ![app](/images/airline.png)
 
