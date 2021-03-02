@@ -15,31 +15,31 @@ __Project name__
 
 The project name is : **Money Detector App**
 
-![app](/images/1000.jfif)
+![app](/images/airline.png)
 
 __Purpose__
 
-The purpose of this project is to make an android application that will detect or recognize the amount of money that is given.
-We chose android application as a platform to use and deploy our project in because that's the most and easiest thing that is 
-used by a lot of people.
+The purpose of this project is to make an application that will let the user to book an 
+airline ticket online.
+We chose netbeans as a text editor or an envirement to use and make our project in because that's the most and easiest thing that is 
+used by many programmers.
 The application can do a lot of stuff for the users such :
-* recognize how much money is given in order to implement some operations like addition, subtraction....
-* this app can be more developed and can be used in so many fields like cashier machine, this technology will make it easier
-for the user to count how much money is given and how much should be given back or money that's given is not enough.
+* book or reserve a flight ticket and this can be for adults or childreen.
+* this app will make it very easy for the user to use an online tool to book for a ticket 
+rather than going out and book it where usually its crowded.
 
 # Intended audience
 
-Intended to be used by anyone that has access to internet and has any issue with detecting the amount of money. 
+Intended to be used by anyone that wants to book an online ticket. 
 It can be Students, teachers, community members, et cetera.
 
 __Project outline__
 
-The project is a simple android application which can allow the users to detect how much money is in there.
-there shall be java classes like CameraActivity class that has some methods like requestpermission which allows us to access to the user's camera
-in order to detect the money,there shall also be some threads that can run multiple functions at the same time because our app doesn't only 
-detect the money is shown by writing but also by a voice call that simply says how mush money is there.
+The project is a simple application which can allow the users to book their ticket online.
+There shall be java classes like Payment, Seat and forms that will make it easy
+for the users to understand the application.
 this app actually will make the junior developers knowledge and allowing 
-them to contribute alot to the projects development. by using classes we can divide the work into neat bundles 
-of code which offer alot of functionality while stil being very readable. Having a class for "CameraActivity" having 
-tostring methods which can be printed on the till slip for example. simple functionality that will make code 
+them to contribute a lot to the projects' development. by using classes we can divide the work into neat bundles 
+of code which offer a lot of functionality while still being very readable. Having a class for "Customers" having 
+to string methods which can be printed on the till slip for example. Simple functionality that will make code 
 neater throughout the entire project. All and all the project is a very simple one.
