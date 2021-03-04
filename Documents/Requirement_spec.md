@@ -54,3 +54,18 @@ One of the goal is to know how to be a part of a team in the software industry, 
 also to get to use the task manager websites like Trello.com, and spread the tasks for each member of the team. 
 the main goal is life of both the the user and the admin easier(user can book a ticket,admin can handle the other stuff like give back the information of the ticket and receipt)
 Our hopes is to streamline the checkout process with this software which can help out our users.
+
+__Glossary__
+
+ * java : Java is a class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.
+ * netBeans : NetBeans is an integrated development environment for Java. NetBeans allows applications to be developed from a set of modular software components called modules.
+  * Mysql : s an open-source relational database management system.
+
+  __other requirements__
+
+in this project we will be mainly working on these things : 
+* Performance : how the app reacts to the user’s requests.
+* Safety.
+* Security :  the way the app protects information.
+* Quality.
+* Availability : how the app operates and functions.
