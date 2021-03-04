@@ -55,6 +55,19 @@ also to get to use the task manager websites like Trello.com, and spread the tas
 the main goal is life of both the the user and the admin easier(user can book a ticket,admin can handle the other stuff like give back the information of the ticket and receipt)
 Our hopes is to streamline the checkout process with this software which can help out our users.
 
+
+__User needs__
+
+To use this app user needs to open app in any device,then need to sign up for application ,
+after signing up user needs to sign in and look for a flight where ever he/she wants to fly.
+then you to chose a flight and book for it , 
+To book a flight ticket you have to fill a form, 
+In the form you have to give your personal information and then pick  a payment method for ticket payment,
+and finaly click "book" button to confrim your flight and wait for the ticket. 
+
+
+
+
 __Glossary__
 
  * java : Java is a class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.
