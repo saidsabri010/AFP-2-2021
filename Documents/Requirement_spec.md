@@ -43,3 +43,14 @@ them to contribute a lot to the projects' development. by using classes we can d
 of code which offer a lot of functionality while still being very readable. Having a class for "Customers" having 
 to string methods which can be printed on the till slip for example. Simple functionality that will make code 
 neater throughout the entire project. All and all the project is a very simple one.
+
+__Current Situatuin__
+
+As the world gets more and more efficent technology needs to move along with it, and so we have the idea to create an application that will make it very easy for the user to book a flight ticket,for now,we have decided how the project should look like and we have got a team of 6 people who will be working on it.
+
+__Goal__
+
+One of the goal is to know how to be a part of a team in the software industry, through some controlling tools like git, GitHub, and gitLab, 
+also to get to use the task manager websites like Trello.com, and spread the tasks for each member of the team. 
+the main goal is life of both the the user and the admin easier(user can book a ticket,admin can handle the other stuff like give back the information of the ticket and receipt)
+Our hopes is to streamline the checkout process with this software which can help out our users.
