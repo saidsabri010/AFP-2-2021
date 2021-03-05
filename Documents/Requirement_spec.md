@@ -83,7 +83,7 @@ __Glossary__
 
 in this project we will be mainly working on these things : 
 * Performance : how the app reacts to the user’s requests.
-* Safety.
+* Safety:try our best to avoid safety problem,like overflow
 * Security :  the way the app protects information.
-* Quality.
+* Quality: this app should have good UI ,and high efficiency
 * Availability : how the app operates and functions.
