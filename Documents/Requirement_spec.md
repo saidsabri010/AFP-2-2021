@@ -75,9 +75,9 @@ and finaly click "book" button to confrim your flight and wait for the ticket.
 
 __Glossary__
 
- * java : Java is a class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.
- * netBeans : NetBeans is an integrated development environment for Java. NetBeans allows applications to be developed from a set of modular software components called modules.
-  * Mysql : s an open-source relational database management system.
+ * java : Java is a class-based, object-oriented programming language that is designed to have as few implementation dependencies as possible.Java applications are typically compiled to bytecode that can run on any Java virtual machine (JVM) regardless of the underlying computer architecture. The syntax of Java is similar to C and C++, but has fewer low-level facilities than either of them.
+ * netBeans : NetBeans is an integrated development environment for Java. NetBeans allows applications to be developed from a set of modular software components called modules.In addition to Java development, it has extensions for other languages like PHP, C, C++, HTML5, and JavaScript. Applications based on NetBeans, including the NetBeans IDE, can be extended by third party developers.
+  * Mysql : s an open-source relational database management system.RDBMS like MySQL works with an operating system to implement a relational database in a computer's storage system, manages users, allows for network access and facilitates testing database integrity and creation of backups.
 
   __other requirements__
 
