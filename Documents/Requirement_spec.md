@@ -5,11 +5,12 @@ Requirement specification
 2. Purpose
 3. Intended audience
 4. User needs 
-5. Project outline 
-6. Current situation 
-7. Goal  
-8. Glossary
-9. Other requirements
+5. Current business flow model.
+6. Project outline 
+7. Current situation 
+8. Goal  
+9. Glossary
+10. Other requirements
 
 __Project name__
 
@@ -65,8 +66,15 @@ To book a flight ticket you have to fill a form,
 In the form you have to give your personal information and then pick  a payment method for ticket payment,
 and finaly click "book" button to confrim your flight and wait for the ticket. 
 
+__Current business flow model__
 
- __Dream system__
+we have a airline ticket booking app , that has the information about airlines of airline companies,
+the goal of this app is to make eassy for people to  get booking airline ticket  
+after the start of the app , user need input the locations then  app will find and give user the  ticket information,then user can book
+according to their specific requirement
+
+
+__Dream system__
 
  Our Dream is simple just to help people with this well designed  "Airline Ticket Reservation System" app .
 
