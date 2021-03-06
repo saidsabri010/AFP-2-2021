@@ -9,6 +9,17 @@ We, as a team setting up our environment to startup our group project with the f
 
 We have agreed to develop an Airline Ticket Reservation System. The application will have a simple login as well as point booking. Currently we are working on documentation which is an integral part of our application. This will give us ideas so that we will have a better understanding when it comes to implementation of our project. The application will be used by both airline admin and users who want to book in order to keep better track of inventory and help the owners manage their administration in a simple way. 
 
+## Dream System 
+
+The aim of this software is to develop a systematic analysis of the procedure involved
+in the reservation of ticket for Airway travel. This should be used in an effective way so that
+various advantages are obtained from the software.
+The “Airline Ticket Reservation System” undertakes as a project 
+based on relevant technologies. The main aim of this project is to develop the software for the
+process of reserving airway ticket should lead to increased efficiency and reduced drawbacks
+which were present in the previous procedure of airline reservation.The software should be,
+error controlled both logically as well as in syntactic manner.
+
 ## UI Plan
 
 The interface will be a not so complicated one, a simple login screen and logout and sign up and a dashboard that will have buttons such as; search, etc.and some labels and checklists such as : adult,child,find cheapest flight.
