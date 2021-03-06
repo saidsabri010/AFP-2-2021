@@ -14,10 +14,13 @@ We have agreed to develop an Airline Ticket Reservation System. The application 
 The interface will be a not so complicated one, a simple login screen and logout and sign up and a dashboard that will have buttons such as; search, etc.and some labels and checklists such as : adult,child,find cheapest flight.
 database MySql will be used for this project to store all the information get entered by the user, everything will be hardcoded into the project. With this simple design we aim to provide an easy interface that doesnt require much training leaving less stress on the owners to train new employees. 
 after payment there will be a form that shows passenger details and payment ones such as;flight id,Passenger name,seat name, etc.
+Input: Collecting the information of the person who is going to travel.
+Output: The issue of ticket on the particular date specified by the traveler. 
+
 
 ## USE CASES 
 
-* firstly Who is going to  use the website ?
+* firstly Who is going to  use the Application ?
 This is an online Airline Ticket Reservation System so it can be used by everone who has internet connection .
 
 * What the user needs to do?
@@ -33,7 +36,17 @@ The steps that user need to perform are following  ,
 
  __After fillig the user needs to proceed the form and will get a ticket of flight with the information of passenger and flight.
 
- 
+
+## REPORTS
+• REPORT MODULE
+The tickets issued should have the details such as plane number, ticket number, seat number,
+traveler’s name, time of departure. The traveler should be informed about the check-in
+time.The names of the fields involved in the Airline Ticket Reservation System are
+ * FLIGHT DETAILS
+ * CHECK AVAILABILITY
+ * BOOK TICKET
+ * VIEW SINGLE PASSENGER RECORD(by taking the ticket number)
+ * EXIT 
 
 
 
