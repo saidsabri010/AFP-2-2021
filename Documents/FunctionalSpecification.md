@@ -58,6 +58,14 @@ The steps that user need to perform are following  ,
 
  __After fillig the user needs to proceed the form and will get a ticket of flight with the information of passenger and flight.
 
+## Constrains__ :
+Design Constraints imposes limitations on the following things:
+* The running environment : Microsoft Visual Studio.
+* The operating system : Microsoft Windows 10.
+* the programming language, databases;
+* coding standards;
+* business logic, etc.
+The application should have methods and function that can do all the operations needed like update reservation or cancel it...etc also,it should have forms.
 
 ## REPORTS
 • REPORT MODULE
