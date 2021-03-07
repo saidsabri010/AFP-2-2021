@@ -5,12 +5,13 @@ Requirement specification
 2. Purpose
 3. Intended audience
 4. User needs 
-5. Current business flow model.
-6. Project outline 
-7. Current situation 
-8. Goal  
-9. Glossary
-10. Other requirements
+5. System rules, patterns, recommendations.
+6. Current business flow model.
+7. Project outline 
+8. Current situation 
+9. Goal  
+10. Glossary
+11. Other requirements
 
 __Project name__
 
@@ -48,6 +49,10 @@ neater throughout the entire project. All and all the project is a very simple o
 __Current Situatuin__
 
 As the world gets more and more efficent technology needs to move along with it, and so we have the idea to create an application that will make it very easy for the user to book a flight ticket,for now,we have decided how the project should look like and we have got a team of 6 people who will be working on it.
+
+__System rules, patterns, recommendations__
+
+For this project we are gonna be using mysql for database and java to handle the project's mechanics,
 
 __Goal__
 
