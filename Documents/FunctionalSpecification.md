@@ -21,9 +21,20 @@ which were present in the previous procedure of airline reservation.The software
 error controlled both logically as well as in syntactic manner.
 
 ## Script
+
 User can input locations then the application will show the ticket information for all available airline company
-then User would like to check every ticket information and choose a good ticket,simply click book button
+then User would like to search every ticket information and choose a good ticket,simply click book button
 user can also reset the locations have inputed to check informations for other airlines
+If user find good ticket ,they can pay for it
+
+## List of requirements
+
+input - The input function get locations from user
+search - The search function get the information from database according to the locations inputed 
+login - The login function let user login according to information from database
+logout - The login function let user logout
+sign up - The sign up function add user information to database
+pay - The pay funtion help user order the ticket
 
 ## UI Plan
 
