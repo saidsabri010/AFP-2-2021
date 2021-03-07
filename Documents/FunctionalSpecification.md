@@ -20,6 +20,11 @@ process of reserving airway ticket should lead to increased efficiency and reduc
 which were present in the previous procedure of airline reservation.The software should be,
 error controlled both logically as well as in syntactic manner.
 
+## Script
+User can input locations then the application will show the ticket information for all available airline company
+then User would like to check every ticket information and choose a good ticket,simply click book button
+user can also reset the locations have inputed to check informations for other airlines
+
 ## UI Plan
 
 The interface will be a not so complicated one, a simple login screen and logout and sign up and a dashboard that will have buttons such as; search, etc.and some labels and checklists such as : adult,child,find cheapest flight.
