@@ -32,3 +32,25 @@ so for that we need this application that will make it easier and with less effo
 
 ##### Functionality:
         First page will have a well designed regestration system page. After which the user will be redirected to their supposed forms, I.e the admin will be directied to the users management form and the user will be taken to the booking flight form where they can fill up the information required.
+
+
+
+## Requirement 
+
+The application has to achieve following goals;
+
+-Simple  intuitive interface .
+-Ability to achieve users requirements.
+-input the data of user . 
+-output the ticekt for user.
+-Security of giving  the real data and keep the data.
+-User Registration, This  describes the scenario where the user registers with the
+Application by providing all the necessary details, in order to make reservations or
+Bookings for flights
+-User Login, This describes the scenario where the user logs into the
+ application, with the username and password.
+-Book Flight , This describes the scenario where user books airline ticket.
+
+
+
+ 
