@@ -53,4 +53,10 @@ Bookings for flights
 
 
 
- 
+## Functional plan
+
+As the application provides to register an account  and sign in to keep the Data of user in database,
+and also admin login so admin can also have an account  to check the data and also change if need to.
+
+
+
