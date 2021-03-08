@@ -65,3 +65,8 @@ Test strategy is that,we should test every function one by one ,including system
 the tester should have the ability to understand user point of view,then we should test the whole
 program, the goal is that what basic thing user want from our App, is firstly information about flight , so we test flight details first and then we upload it and also , and we test database so that user can easly sign up and then can sign in without any trouble, for testing the booking system we give wrong information if it gives us ticekt so we need to fix it . 
 
+
+
+## Maintenance plan
+
+The resevation system has to evaluated regularly in order to assess whetherthe existing one is still useful or a new reservation system will be needed, by this we remove the existing errors as well as the enhancement of the currently used reservation system. Thus, it is an important stage since it greatly affects the cost that has to be incurred by the Airline Ticket Reservation System  whether modification can still be done or  entirely new reservation system is required.
