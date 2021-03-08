@@ -59,4 +59,9 @@ As the application provides to register an account  and sign in to keep the Data
 and also admin login so admin can also have an account  to check the data and also change if need to.
 
 
+## Testing plan
+
+Test strategy is that,we should test every function one by one ,including system testing
+the tester should have the ability to understand user point of view,then we should test the whole
+program, the goal is that what basic thing user want from our App, is firstly information about flight , so we test flight details first and then we upload it and also , and we test database so that user can easly sign up and then can sign in without any trouble, for testing the booking system we give wrong information if it gives us ticekt so we need to fix it . 
 
