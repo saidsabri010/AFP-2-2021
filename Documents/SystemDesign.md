@@ -41,6 +41,12 @@ Contributors.                Roles.
 3.Om Parkash        > programmer, Documentation
 4.Yang Yizhou       > programmer, Documentation
 
+## Business process model
+
+the project will show the ticket information of locations inputed by user, and there is 
+a book/pay user can click if the user is interested in a specific ticket,then the project would show the details of ticket and payment
+if the user input wrong loaction name ,the app will give error message
+
 ## Requirement 
 
 The application has to achieve following goals;
