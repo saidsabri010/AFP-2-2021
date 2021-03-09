@@ -33,7 +33,13 @@ so for that we need this application that will make it easier and with less effo
 ##### Functionality:
         First page will have a well designed regestration system page. After which the user will be redirected to their supposed forms, I.e the admin will be directied to the users management form and the user will be taken to the booking flight form where they can fill up the information required.
 
+## Project plan
 
+Contributors.                Roles.                        
+
+1.Sabri Said       > Original idea, Project manager, Documentation, programmer
+3.Om Parkash        > programmer, Documentation
+4.Yang Yizhou       > programmer, Documentation
 
 ## Requirement 
 
