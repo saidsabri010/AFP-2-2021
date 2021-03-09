@@ -82,7 +82,39 @@ Test strategy is that,we should test every function one by one ,including system
 the tester should have the ability to understand user point of view,then we should test the whole
 program, the goal is that what basic thing user want from our App, is firstly information about flight , so we test flight details first and then we upload it and also , and we test database so that user can easly sign up and then can sign in without any trouble, for testing the booking system we give wrong information if it gives us ticekt so we need to fix it . 
 
+## Milestones
+   
+  - Start Date: March 12, 2021
+  - Milestone 3 Get a working regestration system interface(design part)
+  - End Date: Be able to click on login,sign up,login as admin button and and it takes you to the new form : March 12, 2021
 
+  - Start Date: March 13, 2021
+  - Milestone 1 Get a working sign up interface(design part)
+  - End Date: Be able to sign up :March 13, 2021
+  
+  - Start Date: March 14, 2021
+  - Milestone 2 Get a working login(front in)  
+  - End Date: Be able to login: March 14, 2021
+  
+  - Start Date: March 19, 2021
+  - Milestone 5  sign up users(database connection,back in )
+  - End Date: Be able to sign the user up and store the information in the database: March 19, 2021
+  
+  - Start Date: March 20, 2021
+  - Milestone 6  sign in form(database connection,back in )
+  - End Date: Be able to get the data of the users from db and sign them in if there is no error: March 20, 2021
+   
+  - Start Date: March 21, 2021
+  - Milestone 7 booking interface(front in)
+  - End Date: Be able to access and see the booking form: March 21, 2021
+   
+  - Start Date: March 26, 2021
+  - Milestone 8 booking form(back in,java code,db connection)
+  - End Date: Be able to book a flight ticket: March 26, 2021
+
+  - Start Date: March 27, 2021
+  - Milestone 8 GET the passenger details and payment one
+  - End Date: Be able to see the flight ticket that is booked: March 27, 2021
 
 ## Maintenance plan
 
