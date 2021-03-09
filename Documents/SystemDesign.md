@@ -97,3 +97,5 @@ https://www.cs.fsu.edu/~lacher/courses/COP3331/sdd.html as an example of how a s
 
 https://www.freecodecamp.org/news/how-to-write-a-good-software-design-document-66fcf019569c/
 
+## Summary
+For the success of this system we will rely mostly on peer programming to minimise the errors that programmers may have. Our main focus will be on creating a user-friendly system that does not discriminate against gender, race, age, ethnic group and so on so our design will be highly maintained by allowing users to send emails should they wish to make comments or complaints about the design.
