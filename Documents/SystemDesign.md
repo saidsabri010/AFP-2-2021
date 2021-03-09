@@ -116,6 +116,23 @@ program, the goal is that what basic thing user want from our App, is firstly in
   - Milestone 8 GET the passenger details and payment one
   - End Date: Be able to see the flight ticket that is booked: March 27, 2021
 
+
+
+  ## Existing Solution
+In addition to describing the current implementation, you should also walk through a high level example flow to illustrate how users interact with this system and/or how data flow through it.
+
+An user story is a great way to frame this. Keep in mind that your system might have different types of users with different use cases.
+
+
+## Proposed Solution
+Some people call this the Technical Architecture section. Again, try to walk through a user story to concretize this. Feel free to include many sub-sections and diagrams.
+
+Provide a big picture first, then fill in lots of details. Aim for a world where you can write this, then take a vacation on some deserted island, and another engineer on the team can just read it and implement the solution as you described.
+
+
+## Alternative Solutions
+What else did you consider when coming up with the solution above? What are the pros and cons of the alternatives? Have you considered buying a 3rd-party solution ' or using an open source one ' that solves this problem as opposed to building your own?
+
 ## Maintenance plan
 
 The resevation system has to evaluated regularly in order to assess whetherthe existing one is still useful or a new reservation system will be needed, by this we remove the existing errors as well as the enhancement of the currently used reservation system. Thus, it is an important stage since it greatly affects the cost that has to be incurred by the Airline Ticket Reservation System  whether modification can still be done or  entirely new reservation system is required.
