@@ -87,3 +87,13 @@ program, the goal is that what basic thing user want from our App, is firstly in
 ## Maintenance plan
 
 The resevation system has to evaluated regularly in order to assess whetherthe existing one is still useful or a new reservation system will be needed, by this we remove the existing errors as well as the enhancement of the currently used reservation system. Thus, it is an important stage since it greatly affects the cost that has to be incurred by the Airline Ticket Reservation System  whether modification can still be done or  entirely new reservation system is required.
+
+## Reference Material
+Throughout the process of system design we used amny reasources and references to make a very encompassing and successful system design document. we used :
+
+https://www.its.dot.gov/research_archives/msaa/pdf/MSAA_SystemDesignFINAL.pdf System design template
+
+https://www.cs.fsu.edu/~lacher/courses/COP3331/sdd.html as an example of how a system design document is written
+
+https://www.freecodecamp.org/news/how-to-write-a-good-software-design-document-66fcf019569c/
+
