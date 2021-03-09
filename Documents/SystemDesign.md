@@ -47,6 +47,11 @@ the project will show the ticket information of locations inputed by user, and t
 a book/pay user can click if the user is interested in a specific ticket,then the project would show the details of ticket and payment
 if the user input wrong loaction name ,the app will give error message
 
+## Implementation plan
+
+for this databased project we used java to build the basic structure ,and use mysql
+to solve the database problem
+
 ## Requirement 
 
 The application has to achieve following goals;
