@@ -120,6 +120,9 @@ program, the goal is that what basic thing user want from our App, is firstly in
 
 The resevation system has to evaluated regularly in order to assess whetherthe existing one is still useful or a new reservation system will be needed, by this we remove the existing errors as well as the enhancement of the currently used reservation system. Thus, it is an important stage since it greatly affects the cost that has to be incurred by the Airline Ticket Reservation System  whether modification can still be done or  entirely new reservation system is required.
 
+## Open Questions
+ Any open issues that you aren't sure about, contentious decisions that you'd like readers to weigh in on, suggested future work, and so on. A tongue-in-cheek name for this section is the 'known unknowns'.
+
 ## Reference Material
 Throughout the process of system design we used amny reasources and references to make a very encompassing and successful system design document. we used :
 
