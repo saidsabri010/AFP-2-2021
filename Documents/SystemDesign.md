@@ -46,11 +46,17 @@ Contributors.                Roles.
 the project will show the ticket information of locations inputed by user, and there is 
 a book/pay user can click if the user is interested in a specific ticket,then the project would show the details of ticket and payment
 if the user input wrong loaction name ,the app will give error message
+we will find the best solution of how to design the user interface
+and we have the idea ,then we do documentation,later we will try to implement the project using our tecknology
+so far we already have a script ,hopefully we can have presentation soner or later,
+all of our team is supposed to have some contribution of it
 
 ## Implementation plan
 
-for this databased project we used java to build the basic structure ,and use mysql
-to solve the database problem
+for this project we used java to build the basic structure ,and use mysql
+to solve the database problem,and for the user interface ,we would like to use java as well,
+for implement the database system,we still need other technology ,such as visual stusio code
+and our team will try to find good technology to solve our problem
 
 ## Requirement 
 

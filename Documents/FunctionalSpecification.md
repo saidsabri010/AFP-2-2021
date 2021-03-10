@@ -35,6 +35,7 @@ login - The login function let user login according to information from database
 logout - The login function let user logout
 sign up - The sign up function add user information to database
 pay - The pay funtion help user order the ticket
+check - the check function can check the user's oder and show any details of that function
 
 ## UI Plan
 
