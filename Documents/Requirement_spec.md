@@ -53,6 +53,9 @@ As the world gets more and more efficent technology needs to move along with it,
 __System rules, patterns, recommendations__
 
 For this project we are gonna be using mysql for database and java to handle the project's mechanics,
+for every problem ,we meet ,we will try to find good solution for it ,we will try to use good technology,
+such as visual studio code ,and some other compiler would also be fine for us.
+java and mysql will be the main language we use 
 
 __Goal__
 
