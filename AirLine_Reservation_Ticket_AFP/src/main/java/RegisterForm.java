@@ -1,5 +1,9 @@
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -12,7 +16,8 @@ import javax.swing.JFrame;
  * @author HP
  */
 public class RegisterForm extends javax.swing.JFrame {
-
+   Connection con=null;
+     PreparedStatement pst=null;
     /**
      * Creates new form RegisterForm
      */
@@ -49,7 +54,6 @@ public class RegisterForm extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Desktop\\register.png")); // NOI18N
         jLabel2.setText("jLabel2");
 
         jPanel1.setBackground(new java.awt.Color(0, 204, 204));
@@ -93,6 +97,12 @@ public class RegisterForm extends javax.swing.JFrame {
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
         jLabel8.setText("Confirm Password :");
 
+        jPasswordField2.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                jPasswordField2FocusLost(evt);
+            }
+        });
+
         jButton1.setBackground(new java.awt.Color(0, 0, 204));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("Reset");
@@ -106,6 +116,11 @@ public class RegisterForm extends javax.swing.JFrame {
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Submit");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton3.setBackground(new java.awt.Color(0, 255, 0));
         jButton3.setForeground(new java.awt.Color(255, 255, 255));
@@ -241,6 +256,43 @@ public class RegisterForm extends javax.swing.JFrame {
         this.dispose();
     }//GEN-LAST:event_jLabelRegisterMouseClicked
 
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+     
+        try{
+          String query = "INSERT INTO `book`(`username`,`email`,`password`,`confirm_password`)" + "VALUES (?,?,?,?)";
+          con = DriverManager.getConnection("jdbc:mysql://localhost/users","root","");
+          pst = con.prepareStatement(query);
+          pst.setString(1, jTextField2.getText());
+          pst.setString(2, jTextField3.getText());
+          pst.setString(3, jPasswordField1.getText());
+          pst.setString(4, jPasswordField2.getText());
+          
+          
+          int i = pst.executeUpdate();
+          if(i>0 &&   validatePassword()){
+              JOptionPane.showMessageDialog(this,"Registered successfuly");
+          }
+
+      }catch(Exception e){
+       JOptionPane.showMessageDialog(null,e);
+
+      }
+    
+    }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jPasswordField2FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jPasswordField2FocusLost
+      
+    }//GEN-LAST:event_jPasswordField2FocusLost
+             public boolean validatePassword(){
+                 String password1 =  jPasswordField1.getText();
+                 String password2 =  jPasswordField2.getText();
+                 
+                 if(!password1.equals(password2)){
+                     JOptionPane.showMessageDialog(this, "Password does not match !");
+                     return false;
+                 }
+             return true;
+             }
     /**
      * @param args the command line arguments
      */
