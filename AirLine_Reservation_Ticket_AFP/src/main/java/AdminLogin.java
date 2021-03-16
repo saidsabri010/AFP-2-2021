@@ -43,6 +43,7 @@ public class AdminLogin extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Desktop\\4th semester\\AFP-2-2021\\AirLine_Reservation_Ticket_AFP\\src\\main\\java\\images\\login.jpg")); // NOI18N
         jLabel1.setText("jLabel1");
 
         jPanel2.setBackground(new java.awt.Color(0, 204, 204));

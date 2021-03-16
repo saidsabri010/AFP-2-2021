@@ -54,6 +54,7 @@ public class RegisterForm extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jLabel2.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Desktop\\4th semester\\AFP-2-2021\\AirLine_Reservation_Ticket_AFP\\src\\main\\java\\images\\register.png")); // NOI18N
         jLabel2.setText("jLabel2");
 
         jPanel1.setBackground(new java.awt.Color(0, 204, 204));
