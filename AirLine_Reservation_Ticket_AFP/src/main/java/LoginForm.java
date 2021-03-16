@@ -1,5 +1,10 @@
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -12,7 +17,8 @@ import javax.swing.JFrame;
  * @author HP
  */
 public class LoginForm extends javax.swing.JFrame {
-
+ Connection con=null;
+     PreparedStatement pst=null;
     /**
      * Creates new form LoginForm
      */
@@ -102,6 +108,11 @@ public class LoginForm extends javax.swing.JFrame {
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Login");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jLabelRegister.setBackground(new java.awt.Color(51, 255, 51));
         jLabelRegister.setForeground(new java.awt.Color(255, 255, 255));
@@ -234,6 +245,33 @@ public class LoginForm extends javax.swing.JFrame {
         rgf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         this.dispose();
     }//GEN-LAST:event_jButton3ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+           try{
+          String query = "SELECT * FROM `book` where username=? and password =?" ;
+          con = DriverManager.getConnection("jdbc:mysql://localhost/users","root","");
+          pst = con.prepareStatement(query);
+          pst.setString(1, jTextField1.getText());
+          pst.setString(2, jPasswordField1.getText());
+
+          ResultSet rs = pst.executeQuery();
+          if(rs.next()){
+               Booking rgf = new Booking();
+               rgf.setVisible(true);
+               rgf.pack();
+               rgf.setLocationRelativeTo(null);
+               rgf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+               this.dispose();
+         
+          } else{
+                   JOptionPane.showMessageDialog(this,"Wrong Password or username,Please try again !");
+          }
+
+      }catch(Exception e){
+       JOptionPane.showMessageDialog(null,e);
+
+      }
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
