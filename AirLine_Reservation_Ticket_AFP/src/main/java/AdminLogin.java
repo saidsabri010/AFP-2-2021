@@ -1,5 +1,6 @@
 
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -18,6 +19,8 @@ public class AdminLogin extends javax.swing.JFrame {
      */
     public AdminLogin() {
         initComponents();
+        this.setLocationRelativeTo(null);
+
     }
 
     /**
@@ -43,7 +46,6 @@ public class AdminLogin extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Desktop\\4th semester\\AFP-2-2021\\AirLine_Reservation_Ticket_AFP\\src\\main\\java\\images\\login.jpg")); // NOI18N
         jLabel1.setText("jLabel1");
 
         jPanel2.setBackground(new java.awt.Color(0, 204, 204));
@@ -85,6 +87,11 @@ public class AdminLogin extends javax.swing.JFrame {
         jButton2.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
         jButton2.setText("Login");
+        jButton2.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton2ActionPerformed(evt);
+            }
+        });
 
         jButton1.setBackground(new java.awt.Color(255, 0, 0));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
@@ -186,6 +193,29 @@ public class AdminLogin extends javax.swing.JFrame {
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
         this.dispose();
     }//GEN-LAST:event_jButton1ActionPerformed
+
+    private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
+        
+      try{
+          String username = jTextField1.getText();
+          String password = jPasswordField1.getText();
+              if(username.equals("om") && password.equals("om123")) {
+        Users_Data ud = new Users_Data();
+        ud.setVisible(true);
+        ud.pack();
+        ud.setLocationRelativeTo(null);
+        ud.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        this.dispose();
+        } else{
+          JOptionPane.showMessageDialog(this,"Wrong Password or username,Please try again !");
+        }
+      }catch(Exception e){
+      JOptionPane.showMessageDialog(null,e);
+
+      }
+        
+    
+    }//GEN-LAST:event_jButton2ActionPerformed
 
     /**
      * @param args the command line arguments
