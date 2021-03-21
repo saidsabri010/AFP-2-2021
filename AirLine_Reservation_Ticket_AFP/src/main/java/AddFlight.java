@@ -1,5 +1,11 @@
 
+import java.sql.Connection;
+import java.sql.DriverManager;
+import java.sql.PreparedStatement;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import javax.swing.JFrame;
+import javax.swing.JOptionPane;
 
 /*
  * To change this license header, choose License Headers in Project Properties.
@@ -12,7 +18,8 @@ import javax.swing.JFrame;
  * @author HP
  */
 public class AddFlight extends javax.swing.JFrame {
-
+ Connection con=null;
+     PreparedStatement pst=null;
     /**
      * Creates new form AddFlight
      */
@@ -61,7 +68,6 @@ public class AddFlight extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
-        jLabel11.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Desktop\\addFlightLogo.jpg")); // NOI18N
         jLabel11.setText("jLabel11");
 
         jPanel1.setBackground(new java.awt.Color(0, 255, 204));
@@ -142,6 +148,11 @@ public class AddFlight extends javax.swing.JFrame {
         jButton1.setBackground(new java.awt.Color(51, 255, 204));
         jButton1.setForeground(new java.awt.Color(255, 255, 255));
         jButton1.setText("ADD");
+        jButton1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton1ActionPerformed(evt);
+            }
+        });
 
         jButton2.setBackground(new java.awt.Color(255, 51, 51));
         jButton2.setForeground(new java.awt.Color(255, 255, 255));
@@ -258,9 +269,7 @@ public class AddFlight extends javax.swing.JFrame {
                             .addComponent(jLabel4)
                             .addComponent(jLabel9)
                             .addComponent(jTextField3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel3Layout.createSequentialGroup()
-                        .addGap(90, 90, 90)
-                        .addComponent(jDateChooser3, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jDateChooser3, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addGap(32, 32, 32)
                 .addGroup(jPanel3Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel5)
@@ -323,6 +332,39 @@ public class AddFlight extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
        this.dispose();
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
+        DateFormat da = new SimpleDateFormat("yyyy-MM-dd");
+          String flightname = jTextField2.getText();
+  
+        try{
+          String query = "INSERT INTO `addflight`(`Flight_Id`,`Flightname`,`Froma`,`To`,`Depart`,`Return`,`Arrival`,`Price`,`Depart_time`,`Arrival_time`)" + "VALUES (?,?,?,?,?,?,?,?,?,?)";
+          con = DriverManager.getConnection("jdbc:mysql://localhost/users","root","");
+          pst = con.prepareStatement(query);
+          pst.setString(1, jTextField1.getText());
+          pst.setString(2, flightname);
+          pst.setString(3,  jComboBox1.getSelectedItem().toString());
+          pst.setString(4, jComboBox2.getSelectedItem().toString());
+          pst.setString(5, da.format(jDateChooser1.getDate()));
+          pst.setString(6, da.format(jDateChooser2.getDate()));
+          pst.setString(7, da.format(jDateChooser3.getDate()));
+          pst.setString(8, jTextField3.getText());
+          pst.setString(9, jTextField4.getText());
+          pst.setString(10, jTextField5.getText());
+          
+          
+          
+          int i = pst.executeUpdate();
+          if(i>0){
+              JOptionPane.showMessageDialog(this,"ADDED successfuly");
+          }
+          
+
+      }catch(Exception e){
+       JOptionPane.showMessageDialog(null,e);
+
+      }
+    }//GEN-LAST:event_jButton1ActionPerformed
 
     /**
      * @param args the command line arguments
