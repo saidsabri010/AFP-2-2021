@@ -68,6 +68,7 @@ public class AddFlight extends javax.swing.JFrame {
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
+        jLabel11.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Desktop\\addFlightLogo.jpg")); // NOI18N
         jLabel11.setText("jLabel11");
 
         jPanel1.setBackground(new java.awt.Color(0, 255, 204));
@@ -338,7 +339,7 @@ public class AddFlight extends javax.swing.JFrame {
           String flightname = jTextField2.getText();
   
         try{
-          String query = "INSERT INTO `addflight`(`Flight_Id`,`Flightname`,`Froma`,`To`,`Depart`,`Return`,`Arrival`,`Price`,`Depart_time`,`Arrival_time`)" + "VALUES (?,?,?,?,?,?,?,?,?,?)";
+          String query = "INSERT INTO `addflight`(`Flight_Id`,`Flightname`,`Froma`,`ToWhere`,`Depart`,`Return`,`Arrival`,`Price`,`Depart_time`,`Arrival_time`)" + "VALUES (?,?,?,?,?,?,?,?,?,?)";
           con = DriverManager.getConnection("jdbc:mysql://localhost/users","root","");
           pst = con.prepareStatement(query);
           pst.setString(1, jTextField1.getText());

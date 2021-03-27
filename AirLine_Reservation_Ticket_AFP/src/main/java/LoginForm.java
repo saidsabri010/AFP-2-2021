@@ -256,7 +256,7 @@ public class LoginForm extends javax.swing.JFrame {
 
           ResultSet rs = pst.executeQuery();
           if(rs.next()){
-               Booking rgf = new Booking();
+               BookTicket rgf = new BookTicket();
                rgf.setVisible(true);
                rgf.pack();
                rgf.setLocationRelativeTo(null);
