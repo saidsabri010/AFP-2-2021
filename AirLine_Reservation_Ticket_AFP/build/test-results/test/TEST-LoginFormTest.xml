@@ -1,8 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<testsuite name="LoginFormTest" tests="1" skipped="0" failures="0" errors="0" timestamp="2021-03-29T16:44:50" hostname="HAIER-PC" time="0.235">
-  <properties/>
-  <testcase name="testMain" classname="LoginFormTest" time="0.235"/>
-  <system-out><![CDATA[main
-]]></system-out>
-  <system-err><![CDATA[]]></system-err>
-</testsuite>

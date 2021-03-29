@@ -367,7 +367,13 @@ public class BookTicket extends javax.swing.JFrame {
             int selectIndex = jTable1.getSelectedRow();
 
             int i =  pst.executeUpdate();
-            if(i>0 && flight_id == df.getValueAt(selectIndex, 0).toString()); {
+              int money = Integer.parseInt(jTextField2.getText());
+               
+            if(money < 0 && i > 0){
+                JOptionPane.showMessageDialog(this,"price shouldn't be negative");
+
+            }
+            else if(i>0){
                 JOptionPane.showMessageDialog(this,"Booked successfuly");
                   BoardingPass m = new BoardingPass();
                   m.setVisible(true);
@@ -388,11 +394,10 @@ public class BookTicket extends javax.swing.JFrame {
     }//GEN-LAST:event_jTextField2ActionPerformed
 
     private void jSpinner1StateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_jSpinner1StateChanged
-
+        
         int price = Integer.parseInt(jTextField2.getText());
         int seats =  Integer.parseInt(jSpinner1.getValue().toString());
-
-        int tot = price * seats ;
+                int tot = price * seats;
 
         jLabel14.setText(String.valueOf(tot));
     }//GEN-LAST:event_jSpinner1StateChanged
