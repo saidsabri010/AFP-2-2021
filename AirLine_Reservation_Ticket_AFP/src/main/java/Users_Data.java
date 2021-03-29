@@ -57,6 +57,7 @@ public class Users_Data extends javax.swing.JFrame {
             }
         });
 
+        jLabel1.setIcon(new javax.swing.ImageIcon("C:\\Users\\HP\\Desktop\\users_data.jpeg")); // NOI18N
         jLabel1.setText("jLabel1");
 
         jButton3.setBackground(new java.awt.Color(255, 0, 0));
@@ -80,7 +81,7 @@ public class Users_Data extends javax.swing.JFrame {
                 .addComponent(jButton2)
                 .addGap(68, 68, 68)
                 .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 80, javax.swing.GroupLayout.PREFERRED_SIZE))
-            .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 400, javax.swing.GroupLayout.PREFERRED_SIZE)
+            .addComponent(jLabel1, javax.swing.GroupLayout.Alignment.TRAILING, javax.swing.GroupLayout.PREFERRED_SIZE, 443, javax.swing.GroupLayout.PREFERRED_SIZE)
         );
         layout.setVerticalGroup(
             layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)

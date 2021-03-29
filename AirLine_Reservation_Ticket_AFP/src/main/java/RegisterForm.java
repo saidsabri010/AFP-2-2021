@@ -2,6 +2,7 @@
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
+import java.sql.ResultSet;
 import javax.swing.JFrame;
 import javax.swing.JOptionPane;
 
@@ -261,8 +262,17 @@ public class RegisterForm extends javax.swing.JFrame {
     private void jButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton2ActionPerformed
      
         try{
-          String query = "INSERT INTO `book`(`username`,`email`,`password`,`confirm_password`)" + "VALUES (?,?,?,?)";
-          con = DriverManager.getConnection("jdbc:mysql://localhost/users","root","");
+              con = DriverManager.getConnection("jdbc:mysql://localhost/users","root","");
+               String query1 = "SELECT *  From book where username='"+jTextField2.getText()+"' and email ='"+jTextField3.getText()+"'";
+               pst = con.prepareStatement(query1);
+               ResultSet rs = pst.executeQuery(query1);
+               if(rs.next()==true){
+                   
+                 JOptionPane.showMessageDialog(this,"Duplicate name or email");
+
+               }
+               else{
+                     String query = "INSERT INTO `book`(`username`,`email`,`password`,`confirm_password`)" + "VALUES (?,?,?,?)";      
           pst = con.prepareStatement(query);
           pst.setString(1, jTextField2.getText());
           pst.setString(2, jTextField3.getText());
@@ -274,6 +284,8 @@ public class RegisterForm extends javax.swing.JFrame {
           if(i>0 &&   validatePassword()){
               JOptionPane.showMessageDialog(this,"Registered successfuly");
           }
+               }
+        
 
       }catch(Exception e){
        JOptionPane.showMessageDialog(null,e);
@@ -285,7 +297,10 @@ public class RegisterForm extends javax.swing.JFrame {
     private void jPasswordField2FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_jPasswordField2FocusLost
       
     }//GEN-LAST:event_jPasswordField2FocusLost
-             public boolean validatePassword(){
+          
+    
+    public boolean validatePassword(){
+                 
                  String password1 =  jPasswordField1.getText();
                  String password2 =  jPasswordField2.getText();
                  
