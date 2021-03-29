@@ -115,8 +115,9 @@ public class LoginForm extends javax.swing.JFrame {
         });
 
         jLabelRegister.setBackground(new java.awt.Color(51, 255, 51));
+        jLabelRegister.setFont(new java.awt.Font("Tahoma", 1, 11)); // NOI18N
         jLabelRegister.setForeground(new java.awt.Color(255, 255, 255));
-        jLabelRegister.setText("You already have an account? Click here to Login");
+        jLabelRegister.setText("Don't you have an account?Click here to  Create one!");
         jLabelRegister.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
         jLabelRegister.addMouseListener(new java.awt.event.MouseAdapter() {
             public void mouseClicked(java.awt.event.MouseEvent evt) {
@@ -134,6 +135,11 @@ public class LoginForm extends javax.swing.JFrame {
         });
 
         jCheckBox1.setText("Show Password");
+        jCheckBox1.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jCheckBox1ActionPerformed(evt);
+            }
+        });
 
         javax.swing.GroupLayout jPanel1Layout = new javax.swing.GroupLayout(jPanel1);
         jPanel1.setLayout(jPanel1Layout);
@@ -272,6 +278,14 @@ public class LoginForm extends javax.swing.JFrame {
 
       }
     }//GEN-LAST:event_jButton2ActionPerformed
+
+    private void jCheckBox1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jCheckBox1ActionPerformed
+        if (jCheckBox1.isSelected()) {
+      jPasswordField1.setEchoChar((char)0); 
+   } else {
+      jPasswordField1.setEchoChar('*');
+   }
+    }//GEN-LAST:event_jCheckBox1ActionPerformed
 
     /**
      * @param args the command line arguments
