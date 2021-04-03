@@ -130,6 +130,11 @@ public class BookTicket extends javax.swing.JFrame {
         jLabel7.setText(" Gender :");
 
         jComboBox5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select", "Male", "Female" }));
+        jComboBox5.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                jComboBox5ItemStateChanged(evt);
+            }
+        });
 
         jLabel8.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         jLabel8.setForeground(new java.awt.Color(255, 255, 255));
@@ -152,10 +157,25 @@ public class BookTicket extends javax.swing.JFrame {
         jLabel12.setText("Price :");
 
         jComboBox3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select", "First Class", "Business Class", "Economy Class" }));
+        jComboBox3.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                jComboBox3ItemStateChanged(evt);
+            }
+        });
 
         jComboBox4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select", "Adult", "Child" }));
+        jComboBox4.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                jComboBox4ItemStateChanged(evt);
+            }
+        });
 
         jComboBox6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Select", "10 KG", "20 KG", "30 KG", "40 KG", "50 KG", "More then 50 KG" }));
+        jComboBox6.addItemListener(new java.awt.event.ItemListener() {
+            public void itemStateChanged(java.awt.event.ItemEvent evt) {
+                jComboBox6ItemStateChanged(evt);
+            }
+        });
 
         jSpinner1.addChangeListener(new javax.swing.event.ChangeListener() {
             public void stateChanged(javax.swing.event.ChangeEvent evt) {
@@ -163,6 +183,7 @@ public class BookTicket extends javax.swing.JFrame {
             }
         });
 
+        jTextField2.setEditable(false);
         jTextField2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 jTextField2ActionPerformed(evt);
@@ -397,9 +418,58 @@ public class BookTicket extends javax.swing.JFrame {
         
         int price = Integer.parseInt(jTextField2.getText());
         int seats =  Integer.parseInt(jSpinner1.getValue().toString());
-                int tot = price * seats;
-
-        jLabel14.setText(String.valueOf(tot));
+        int class_type;
+        int person_type;
+        int luggage_fee=0;
+        if (jComboBox3.getSelectedItem().toString()=="Economy Class")
+        {
+            class_type=3;
+            price=price*class_type;
+        }
+        else if (jComboBox3.getSelectedItem().toString()=="Business Class")
+        {
+            class_type=2;
+            price=price*class_type;
+        }
+        else
+        {
+            class_type=1;
+            price=price*class_type;
+        }
+        if(jComboBox4.getSelectedItem().toString()=="Child")
+        {
+            person_type=1;
+        }
+        else person_type=2;
+        if(jComboBox6.getSelectedItem().toString()=="10 KG")
+        {
+            luggage_fee=0;
+        }
+        else if(jComboBox6.getSelectedItem().toString()=="20 KG")
+        {
+            luggage_fee=20;
+        }
+        else if(jComboBox6.getSelectedItem().toString()=="30 KG")
+        {
+            luggage_fee=30;
+        }
+        else if(jComboBox6.getSelectedItem().toString()=="40 KG")
+        {
+            luggage_fee=40;
+        }
+        else if(jComboBox6.getSelectedItem().toString()=="50 KG")
+        {
+            luggage_fee=50;
+        }
+        else if(jComboBox6.getSelectedItem().toString()=="More then 50 KG")
+        {
+            luggage_fee=100;
+        }
+        int tot = price * seats +luggage_fee;
+        if (person_type==1){
+            jLabel14.setText(String.valueOf(tot/2));
+        }
+        else jLabel14.setText(String.valueOf(tot));
     }//GEN-LAST:event_jSpinner1StateChanged
 
     private void jButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton1ActionPerformed
@@ -448,6 +518,234 @@ public class BookTicket extends javax.swing.JFrame {
         jTextField2.setText(df.getValueAt(selectIndex, 7).toString());
         jLabel13.setText(df.getValueAt(selectIndex, 0).toString());
     }//GEN-LAST:event_jTable1MouseClicked
+
+    private void jComboBox3ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jComboBox3ItemStateChanged
+        int price = Integer.parseInt(jTextField2.getText());
+        int seats =  Integer.parseInt(jSpinner1.getValue().toString());
+        int class_type;
+        int person_type;
+        int luggage_fee=0;
+        if (jComboBox3.getSelectedItem().toString()=="Economy Class")
+        {
+            class_type=3;
+            price=price*class_type;
+        }
+        else if (jComboBox3.getSelectedItem().toString()=="Business Class")
+        {
+            class_type=2;
+            price=price*class_type;
+        }
+        else
+        {
+            class_type=1;
+            price=price*class_type;
+        }
+        if(jComboBox4.getSelectedItem().toString()=="Child")
+        {
+            person_type=1;
+        }
+        else person_type=2;
+        if(jComboBox6.getSelectedItem().toString()=="10 KG")
+        {
+            luggage_fee=0;
+        }
+        else if(jComboBox6.getSelectedItem().toString()=="20 KG")
+        {
+            luggage_fee=20;
+        }
+        else if(jComboBox6.getSelectedItem().toString()=="30 KG")
+        {
+            luggage_fee=30;
+        }
+        else if(jComboBox6.getSelectedItem().toString()=="40 KG")
+        {
+            luggage_fee=40;
+        }
+        else if(jComboBox6.getSelectedItem().toString()=="50 KG")
+        {
+            luggage_fee=50;
+        }
+        else if(jComboBox6.getSelectedItem().toString()=="More then 50 KG")
+        {
+            luggage_fee=100;
+        }
+        int tot = price * seats +luggage_fee;
+        if (person_type==1){
+            jLabel14.setText(String.valueOf(tot/2));
+        }
+        else jLabel14.setText(String.valueOf(tot));// TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox3ItemStateChanged
+
+    private void jComboBox4ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jComboBox4ItemStateChanged
+        int price = Integer.parseInt(jTextField2.getText());
+        int seats =  Integer.parseInt(jSpinner1.getValue().toString());
+        int class_type;
+        int person_type;
+        int luggage_fee=0;
+        if (jComboBox3.getSelectedItem().toString()=="Economy Class")
+        {
+            class_type=3;
+            price=price*class_type;
+        }
+        else if (jComboBox3.getSelectedItem().toString()=="Business Class")
+        {
+            class_type=2;
+            price=price*class_type;
+        }
+        else
+        {
+            class_type=1;
+            price=price*class_type;
+        }
+        if(jComboBox4.getSelectedItem().toString()=="Child")
+        {
+            person_type=1;
+        }
+        else person_type=2;
+        if(jComboBox6.getSelectedItem().toString()=="10 KG")
+        {
+            luggage_fee=0;
+        }
+        else if(jComboBox6.getSelectedItem().toString()=="20 KG")
+        {
+            luggage_fee=20;
+        }
+        else if(jComboBox6.getSelectedItem().toString()=="30 KG")
+        {
+            luggage_fee=30;
+        }
+        else if(jComboBox6.getSelectedItem().toString()=="40 KG")
+        {
+            luggage_fee=40;
+        }
+        else if(jComboBox6.getSelectedItem().toString()=="50 KG")
+        {
+            luggage_fee=50;
+        }
+        else if(jComboBox6.getSelectedItem().toString()=="More then 50 KG")
+        {
+            luggage_fee=100;
+        }
+        int tot = price * seats +luggage_fee;
+        if (person_type==1){
+            jLabel14.setText(String.valueOf(tot/2));
+        }
+        else jLabel14.setText(String.valueOf(tot));        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox4ItemStateChanged
+
+    private void jComboBox6ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jComboBox6ItemStateChanged
+        int price = Integer.parseInt(jTextField2.getText());
+        int seats =  Integer.parseInt(jSpinner1.getValue().toString());
+        int class_type;
+        int person_type;
+        int luggage_fee=0;
+        if (jComboBox3.getSelectedItem().toString()=="Economy Class")
+        {
+            class_type=3;
+            price=price*class_type;
+        }
+        else if (jComboBox3.getSelectedItem().toString()=="Business Class")
+        {
+            class_type=2;
+            price=price*class_type;
+        }
+        else
+        {
+            class_type=1;
+            price=price*class_type;
+        }
+        if(jComboBox4.getSelectedItem().toString()=="Child")
+        {
+            person_type=1;
+        }
+        else person_type=2;
+        if(jComboBox6.getSelectedItem().toString()=="10 KG")
+        {
+            luggage_fee=0;
+        }
+        else if(jComboBox6.getSelectedItem().toString()=="20 KG")
+        {
+            luggage_fee=20;
+        }
+        else if(jComboBox6.getSelectedItem().toString()=="30 KG")
+        {
+            luggage_fee=30;
+        }
+        else if(jComboBox6.getSelectedItem().toString()=="40 KG")
+        {
+            luggage_fee=40;
+        }
+        else if(jComboBox6.getSelectedItem().toString()=="50 KG")
+        {
+            luggage_fee=50;
+        }
+        else if(jComboBox6.getSelectedItem().toString()=="More then 50 KG")
+        {
+            luggage_fee=100;
+        }
+        int tot = price * seats +luggage_fee;
+        if (person_type==1){
+            jLabel14.setText(String.valueOf(tot/2));
+        }
+        else jLabel14.setText(String.valueOf(tot));        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox6ItemStateChanged
+
+    private void jComboBox5ItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_jComboBox5ItemStateChanged
+        int price = Integer.parseInt(jTextField2.getText());
+        int seats =  Integer.parseInt(jSpinner1.getValue().toString());
+        int class_type;
+        int person_type;
+        int luggage_fee=0;
+        if (jComboBox3.getSelectedItem().toString()=="Economy Class")
+        {
+            class_type=3;
+            price=price*class_type;
+        }
+        else if (jComboBox3.getSelectedItem().toString()=="Business Class")
+        {
+            class_type=2;
+            price=price*class_type;
+        }
+        else
+        {
+            class_type=1;
+            price=price*class_type;
+        }
+        if(jComboBox4.getSelectedItem().toString()=="Child")
+        {
+            person_type=1;
+        }
+        else person_type=2;
+        if(jComboBox6.getSelectedItem().toString()=="10 KG")
+        {
+            luggage_fee=0;
+        }
+        else if(jComboBox6.getSelectedItem().toString()=="20 KG")
+        {
+            luggage_fee=20;
+        }
+        else if(jComboBox6.getSelectedItem().toString()=="30 KG")
+        {
+            luggage_fee=30;
+        }
+        else if(jComboBox6.getSelectedItem().toString()=="40 KG")
+        {
+            luggage_fee=40;
+        }
+        else if(jComboBox6.getSelectedItem().toString()=="50 KG")
+        {
+            luggage_fee=50;
+        }
+        else if(jComboBox6.getSelectedItem().toString()=="More then 50 KG")
+        {
+            luggage_fee=100;
+        }
+        int tot = price * seats +luggage_fee;
+        if (person_type==1){
+            jLabel14.setText(String.valueOf(tot/2));
+        }
+        else jLabel14.setText(String.valueOf(tot));        // TODO add your handling code here:
+    }//GEN-LAST:event_jComboBox5ItemStateChanged
 
     /**
      * @param args the command line arguments
