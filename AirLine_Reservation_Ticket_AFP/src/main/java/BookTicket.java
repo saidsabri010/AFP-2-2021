@@ -28,6 +28,8 @@ public class BookTicket extends javax.swing.JFrame {
     public BookTicket() {
         initComponents();
                 setLocationRelativeTo(null);
+                jTextField1.setVisible(false);
+                   jTextField3.setVisible(false);
 
     }
 
