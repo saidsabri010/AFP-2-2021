@@ -1,0 +1,19 @@
+Action performed                                Expected outcome   
+
+Clicking on Add button                          successfully added
+
+
+Clicking on Add button without filling          fields are required
+all the requirements  
+
+
+Clicking on Back button                         Users_Data form opens
+
+
+Clicking on Exit button                         Exit the application
+
+
+Clicking on Add button without opening          Exception : server should be opened
+the Xampp server
+
+
