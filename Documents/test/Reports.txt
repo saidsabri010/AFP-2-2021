@@ -1,0 +1,10 @@
+Action performed                                Expected outcome   
+
+Clicking on back button                         Users_Data opens
+
+
+Clicking on View_Data button                    List of people who booked a ticket
+
+
+Clicking on View_Data button                    Exception: open the server 
+without opening the server  
