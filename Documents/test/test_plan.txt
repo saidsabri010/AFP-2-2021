@@ -1,0 +1,41 @@
+                                        Test Plan
+
+This document describes the plan for testing the architectural of the System. This Test Plan document supports the following objectives:
+
+Identify existing project information and the software that should be tested.
+Recommend and describe the testing strategies to be employed.                              
+
+The listing below identifies those items (use cases, functional requirements, non-functional requirements) that have been identified as targets for testing. This list represents what will be tested.
+
+Verify the function of login
+Verify the function of register
+Verify the function of report
+Verify the function of book
+Verify the function of admin_login
+Verify the function of exit
+Verify the function of admin_exit
+Verify the function of connect_db
+Verify the function of read_db
+
+the testers are Said ,Om and Yizhou
+
+the result of test should be a form ,and statement should be clean
+
+The Test form shold be the form shows below
+
+###
+tester:
+
+environment:
+
+test_time:
+
+function_tested:
+
+
+Action performed                                Expected outcome                                Outcome                                  Issues
+###
+
+after testing, everyone should upload their result as this form
+
+
