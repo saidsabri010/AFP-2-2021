@@ -1,0 +1,114 @@
+                                        Test Plan
+
+This document describes the plan for testing the architectural of the System. This Test Plan document supports the following objectives:
+
+Identify existing project information and the software that should be tested.
+Recommend and describe the testing strategies to be employed.                              
+
+The listing below identifies those items (use cases, functional requirements, non-functional requirements) that have been identified as targets for testing. This list represents what will be tested.
+
+Verify the functions of login
+Verify the functions of register
+Verify the functions of report
+Verify the functions of book
+Verify the functions of admin_login
+Verify the functions of exit
+Verify the functions of admin_exit
+Verify the functions of connect_db
+Verify the functions of read_db
+
+the testers are Said Sabri ,Om Parkash  and Yizhou 
+
+
+  Action performed                                Expected outcome                                Outcome                                            Issues                   Tested By
+
+
+
+clicking the Login button in main              open the login form                       opens the login form                                        No Issues                Om Parkash
+
+
+clicking the Admin Login button in main        open the Admin Login form                 opens the Admin Login form                                  No Issues                Om Parkash
+
+
+clicking the Sign up button in main            open the Registerform                     opens the Registerform                                      No Issues                Om Parkash
+
+
+clicking the Search button                    show the details of selected flight        shows the details of selected flight                        No Issues                Om Parkash
+
+
+searching the flight for non existing flight     do not show the flight                  does not show the flight                                    No Issues                Om Parkash
+
+
+clicking the one way  button                show the arrival and departure dates       shows the arrival and departure dates                         No Issues                Om Parkash
+
+
+clicking the two way  button                show the arrival ,departure and return  dates    shows the arrival ,departure and return  dates          No Issues                Om Parkash
+
+
+clicking the book  button                   book the passenger details to the boarding pass    books the passenger details to the boarding pass      No Issues                Om Parkash
+
+
+clicking the ADD  button                   add flight with details to the database            adds flight with details to the database               No Issues                Om Parkash 
+
+
+Clicking on back button                         Users_Data opens                             Users_Data opens                                        No Issues                 Said Sabri
+              
+
+Clicking on View_Data button                    List of people who booked a ticket           List of people who booked a ticket                      No Issues                 Said Sabri
+
+
+Clicking on View_Data button                    Exception: open the server                   Exception: open the server                           Issue Found : Exception      Said Sabri
+without opening the server 
+
+
+Clicking on Add button                          successfully added                           successfully added                                      No Issues                 Said Sabri
+
+
+Clicking on Add button without filling          fields are required                         fields are required                                      No Issues                 Said Sabri
+all the requirements  
+
+
+Clicking on Back button                         Users_Data form opens                       Users_Data form opens                                    No Issues                 Said Sabri
+
+
+Clicking on Exit button                         Exit the application                        Exit the application                                     No Issues                 Said Sabri
+
+
+Clicking on Add button without opening          Exception : server should be opened         Exception : server should be opened                     Issue found: Exception     Said Sabri
+the Xampp server
+
+
+login with username and password.               login successfully                          login successfully                                      No Issues                    Yizhou 
+
+
+login with wrong username and password.         fail to login                               fail to login                                           No Issues                    Yizhou 
+
+
+login without any username and password.         fail to login                               fail to login                                          No Issues                    Yizhou 
+
+
+click 'do not have username'                    show registration form                     show registration form                                   No Issues                    Yizhou 
+
+
+login after change the password.                login successfully                          login successfully                                      No Issues                    Yizhou 
+
+
+enable the show password                        password is visible                         password is wrong                                       No Issues                    Yizhou 
+
+
+login with password and wrong username.          fail to login                               username is wrong                                      No Issues                    Yizhou 
+
+
+login with username but withoud password.         fail to login                              wrong password                                         No Issues                    Yizhou 
+
+
+login with password but withoud username.         fail to login                              wrong username                                         No Issues                    Yizhou 
+
+
+click 'do not have username' several times        show registration form                    show registration form                                  No Issues                    Yizhou 
+
+
+login before change the password.                 login successfully                        login successfully                                      No Issues                    Yizhou 
+
+
+disable the show password                          password is not visible                  password is not visible                                 No Issues                    Yizhou 
